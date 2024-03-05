@@ -31,7 +31,7 @@ public class Customer {
     }
     @Override
     public String toString() {
-        return "Customer Name : " + firstName + " " + lastName + " .\nEmail : " + email;
+        return "Customer Name : " + firstName + " " + lastName + " ,Email : " + email +"\n";
     }
 
     private boolean emailValidation(String email) {

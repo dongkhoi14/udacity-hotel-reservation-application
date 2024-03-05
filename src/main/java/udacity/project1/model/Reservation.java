@@ -6,6 +6,22 @@ public class Reservation {
     private final Date checkInDate;
     private final Date checkOutDate;
 
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public IRoom getiRoom() {
+        return iRoom;
+    }
+
+    public Date getCheckInDate() {
+        return checkInDate;
+    }
+
+    public Date getCheckOutDate() {
+        return checkOutDate;
+    }
+
     public Reservation(Customer customer, IRoom iRoom, Date checkInDate, Date checkOutDate) {
         this.customer = customer;
         this.iRoom = iRoom;
@@ -14,6 +30,6 @@ public class Reservation {
     }
     @Override
     public String toString(){
-        return "Customer " + customer.getFirstName();
+        return "Customer :" + customer.getFirstName() + " Room : " + iRoom.getRoomNumber() + " Checkin Date: " + getCheckInDate().toString() + " Checkout Date: " + getCheckOutDate().toString() ;
     }
 }
